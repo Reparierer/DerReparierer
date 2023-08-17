@@ -1,3 +1,7 @@
+# Note: This repository has been moved to [codeberg](https://codeberg.org/derreparierer/derreparierer)!
+This repository has moved to [codeberg](https://codeberg.org/derreparierer/derreparierer)
+
+
 # Microwave sharp display repair
 ![Microwave Sharp R-798(AL)](figures/overview.png)
 

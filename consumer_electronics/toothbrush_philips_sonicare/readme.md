@@ -1,3 +1,6 @@
+# Note: This repository has been moved to [codeberg](https://codeberg.org/derreparierer/derreparierer)!
+This repository has moved to [codeberg](https://codeberg.org/derreparierer/derreparierer)
+
 # Toothbrush Philips Sonicare
 
 ![overview](figures/overview.jpg)
