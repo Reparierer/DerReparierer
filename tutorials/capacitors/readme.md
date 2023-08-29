@@ -30,6 +30,7 @@ Note that in the figure above, the first capacitor is no safety capacitor, as th
 
 
 ## Investigating in impedance plots
+![impedance_analyzer](figures/impedance_analyzer.jpg)
 Another way to investigate components is to measure them with an impedance analyzer. This shows the impedance and phase of the component over the frequency in a double logarithmic scale. 
 
 ![impedance](figures/impedance_curves.png)
