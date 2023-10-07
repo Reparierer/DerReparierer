@@ -21,3 +21,7 @@ Some additional comments to the schematic:
  * Once the motor `M1` blocks or a too high current flows trough the motor, a significant voltage drop accours over `L1` so that the `warning`-lamp turns on.
  * to turn on the triac `D2`, a diac `D1` together with the capacitor `C4` is used to provide the necessary current to fire the triac `D2`.
  * The potentiometer `R1` represents the slider to control the vacuum cleaners power.
+
+
+## Motor failure
+Another common fault in vacuum cleaners is the motor itself. Replacement motors can often be purchased from the manufacturer or on ebay.
