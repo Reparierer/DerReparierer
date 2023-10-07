@@ -25,3 +25,8 @@ Some additional comments to the schematic:
 
 ## Motor failure
 Another common fault in vacuum cleaners is the motor itself. Replacement motors can often be purchased from the manufacturer or on ebay.
+
+
+## Open the housing
+May this figure helps to detect screw holes to open the housing.
+![](figures/open_housing.png)
