@@ -7,3 +7,6 @@ Electrical devices are thrown away far too often, even though only a small thing
 DerReparierer can also be found on [Mastodon](https://social.tchncs.de/@derreparierer). Here you can find the latest repairs as well as information about upcoming events of Repair Cafes.
 
 ![mastodon](figures/mastodon.png)
+
+# License
+This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
