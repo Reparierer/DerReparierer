@@ -17,7 +17,7 @@ First check whether the integrated power supply unit provides an output voltage.
 If the power supply unit does not supply an output voltage, the semiconductors (MOSFETs, diodes) of the power supply unit should be checked. In this case, the output diode of the flyback is defective. Information on diodes and their replacement can be found in the [section on diodes](../../tutorials/diodes/readme.md). 
 
 Original diode: `HER303, 200V, 3A`.    
-Replacement diode: `BY500-1000 1000V 5A` (Pollin order number: `140716`). 
+Replacement diode: `BY500-1000 1000V 5A`.
 
 It should also be mentioned that the original diode installed is a rectifier diode for mains applications (50 Hz / 60 Hz). However, a consumer switching power supply (with silicon semiconductors) usually has switching frequencies in the range 50 kHz to 150 kHz. For this reason, a different diode was chosen as a replacement.
 
