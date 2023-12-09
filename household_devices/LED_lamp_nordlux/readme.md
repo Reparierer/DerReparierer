@@ -1,6 +1,7 @@
 # Nordlux LED switched mode power supply repair
 
 ![](figures/overview.png)
+
 Manufacturer: `Nordlux`
 
 # Description of failure
