@@ -1,4 +1,7 @@
 # MOSFETs in switched-mode power supplies (SMPS)
+
+![](figures/overview.png)
+
 In this article, we will take a look at the failure mechanism of MOSFETs. These components are the most important components in modern power electronic converters. In the event of overvoltage, overheating or excessive current, these components fail. In addition, all components come with a certain lifespan.
 
 MOSFETs are very popular as power semiconductors in switching power supplies. They are cheap, easy to use and enable the development of efficient, modern power supplies. They are available in various designs. The design determines the cooling connection. There are various different types of MOSFETs. As N-channel MOSFETs are the most common ones in power electronics, we will focus on this type in this article.
