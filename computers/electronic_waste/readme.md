@@ -37,6 +37,9 @@ As soon as the switch to Linux has been made, the question arises as to which pr
  * Graphic editing: `GIMP`
  * Drawing program: `Inkscape`
 
+## Linux and software updates
+In my experience so far, Linux Mint offers extremely stable operating system updates. Setting up automatic updates is therefore recommended from the user's point of view. This also saves the maintenance effort of the system.
+
 
 ## Possible conversion strategy towards a Linux operating system
 To avoid switching to a new operating system and new programs all at once (too many new things at once), it is advisable to carry out the changeover in stages. In the first step, it makes sense to install the Linux programs under your current operating system to familiarize yourself with them. Many of the programs listed, such as `Firefox, Thunderbird, LibreOffice, KeepassXC, VLC and many more`, are also available for other operating systems, too. Once the user is familiar with these programs, the operating system can be changed after a few months. This way, there is not too much new information at once and you can gradually get used to the new software.
