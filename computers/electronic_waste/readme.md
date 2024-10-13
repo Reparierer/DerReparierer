@@ -36,6 +36,7 @@ As soon as the switch to Linux has been made, the question arises as to which pr
  * Password manager: `KeepassXC`
  * Graphic editing: `GIMP`
  * Drawing program: `Inkscape`
+ * Games: `Steam` (More and more games for Linux are supported by Steam)
 
 ## Linux and software updates
 In my experience so far, Linux Mint offers extremely stable operating system updates. Setting up automatic updates is therefore recommended from the user's point of view. This also saves the maintenance effort of the system.
