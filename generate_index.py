@@ -1,6 +1,14 @@
 """Auto-generate the index.rst files for all sub-folders for the sphinx toc-tree."""
 import os
 
+# name convention:
+# base_path / base_folder: project root directory
+# topic: main topics, e.g. bike, car, computers, ...
+# sub_topic: devices in a topic, e.g. mobile charger, subwoofer, radio inside the consumer electronics category
+# toc_entry: every document that is part of the table of content (toc)
+# md: markdown
+
+# a markdown file is for every single device, e.g. mobile charger, subwoofer, radio inside the consumer electronics category
 
 def generate_toc(base_path: str) -> list[str]:
     """
@@ -23,39 +31,44 @@ def generate_toc(base_path: str) -> list[str]:
 
 
 if __name__ == "__main__":
-    all_markdown_files = generate_toc('.')
-    print(all_markdown_files)
+    toc_entries_md = generate_toc('.')
+    print(toc_entries_md)
 
-    # generate a list of all base folders
-    base_folder_list = []
-    for md_filepath in all_markdown_files:
-        base_folder = md_filepath.split("/")
-        if base_folder[0] != "readme.md" and base_folder[0] not in base_folder_list:
-            base_folder_list.append(base_folder[0])
-    print(base_folder_list)
+    # generate a list of all topics
+    topic_list = []
+    for single_md_filepath in toc_entries_md:
+        topic_name_ = single_md_filepath.split("/")
+        if topic_name_[0] != "readme.md" and topic_name_[0] not in topic_list:
+            topic_list.append(topic_name_[0])
+    # sort the topic list
+    topic_list = sorted(topic_list)
 
-    base_folder_list = sorted(base_folder_list)
-
-    # generate sub-index files
-    for topic_folder in base_folder_list:
-        index_string = (f"{topic_folder}\n"
+    # generate index files for sub-topics
+    for topic_folder in topic_list:
+        sub_topic_index_string = (f"{topic_folder.replace("_", " ").title()}\n"
                         f"==========================\n\n"
                         f".. toctree::\n"
                         f"   :maxdepth: 1\n"
                         f"   :caption: Contents:\n"
                         f"\n"
-                        )
-
-        for readme_file_name in all_markdown_files:
-            # if topic_folder in readme_file_name:
+                                  )
+        # sort sub-topics by alphabet
+        sub_topic_list = []
+        for readme_file_name in toc_entries_md:
             if readme_file_name.startswith(topic_folder):
-                add_string_index = "   " + readme_file_name.replace(f"{topic_folder}/", "") + "\n"
-                index_string += add_string_index
+                sub_topic_list.append(readme_file_name.replace(f"{topic_folder}/", ""))
+        sub_topic_list = sorted(sub_topic_list)
 
+        # generate content for the sub-topic index.rst file
+        for readme_file_name in sub_topic_list:
+            add_string_index = "   " + readme_file_name + "\n"
+            sub_topic_index_string += add_string_index
+
+        # write sub-topic index.rst file
         with open(f"{topic_folder}/index.rst", "w") as text_file:
-            text_file.write(index_string)
+            text_file.write(sub_topic_index_string)
 
-    # generate main-index file
+    # generate topic index.rst file
     main_index_string = """Welcome to derReparierer. All about repairing electronics.
 ===============================================================================
 
@@ -68,10 +81,11 @@ Here you will find several categories for repairing electronic devices. Just tak
    
    readme.md
 """
+    # add dynamic topics to index.rst file
+    for topic_name in topic_list:
+        topic_string_index = f"   {topic_name}/index\n"
+        main_index_string += topic_string_index
 
-    for topic_name in base_folder_list:
-        add_main_string_index = f"   {topic_name}/index\n"
-        main_index_string += add_main_string_index
-
+    # write main index.rst file
     with open(f"index.rst", "w") as text_file:
         text_file.write(main_index_string)
