@@ -45,6 +45,10 @@ if __name__ == "__main__":
 
     # generate index files for sub-topics
     for topic_folder in topic_list:
+        # Note:
+        # a maxdepth of 1 shows the sub-topics on sub-topic page
+        # a maxdepth of 2 shows the subtopics and the captions inside the document (e.g. failure investigation).
+        # -> 1 is preferred!
         sub_topic_index_string = (f"{topic_folder.replace("_", " ").title()}\n"
                         f"==========================\n\n"
                         f".. toctree::\n"
@@ -69,13 +73,18 @@ if __name__ == "__main__":
             text_file.write(sub_topic_index_string)
 
     # generate topic index.rst file
+    # Note:
+    # a maxdepth of 1 shows the topics on the landing page
+    # a maxdepth of 2 shows the topics and subtopics on the landing page
+    # a maxdepth of 3 shows the topics, subtopics and the captions inside the document (e.g. failure investigation).
+    # -> 1 or 2 is preferred!
     main_index_string = """Welcome to derReparierer. All about repairing electronics.
 ===============================================================================
 
 Here you will find several categories for repairing electronic devices. Just take a look around!
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Repair Categories:
    :glob:
    
