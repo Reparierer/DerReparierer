@@ -4,10 +4,10 @@
 
 Manufacturer: `Nordlux`
 
-# Description of failure
+## Description of failure
 The lamp does not turn on.
 
-# Failure investigation 
+## Failure investigation 
 First check whether the integrated power supply unit provides an output voltage. If this is zero or unstable, this indicates a faulty power supply unit. 
 
 ## Output voltage of zero
