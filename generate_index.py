@@ -91,8 +91,9 @@ Here you will find several categories for repairing electronic devices. Just tak
    readme.md
 """
     # add dynamic topics to index.rst file
+    # Note: Name in brackets <> fixes the displayed name vs. the real file name.
     for topic_name in topic_list:
-        topic_string_index = f"   {topic_name}/index\n"
+        topic_string_index = f"   {topic_name.replace("_", "").title()} <{topic_name}/index>\n"
         main_index_string += topic_string_index
 
     # write main index.rst file
