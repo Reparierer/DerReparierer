@@ -12,12 +12,12 @@ In simple terms, a MOSFET acts as a switch. By applying a voltage between the ga
 
 The semiconductor manufacturing process always produces an intrinsic diode, also known as a body diode. This diode is antiparallel to the channel. In some power supply topologies, this is essential for the function of the circuit. 
 
-### MOSFET failures 
+## MOSFET failures 
 Most broken MOSFETs can be detected by measuring the antiparallel body-diode by a diode tester (measuring forward voltage by a multimeter). If a forward voltage can be measured, it is a good hint, that the component is fine. The component is defective, if a forward voltage of `0 V` is measured.
 
 Also,  the resistance between the gate pin `G` and the source pin `S` as well as the drain pin `D` should be measured. It should be in the `MOhm` range. Note, if you measure in-circuit, due to pull-down resistors (typical in rage `10 kOhm ... 100 kOhm`), there will be a different value shown compared to a device what is not in-circuit. In case of a broken MOSFET, the resistance it typically `0 Ohm`.
 
-### Replacing MOSFETs
+## Replacing MOSFETs
 If possible, broken MOSFETs should be replaced with the same type. This is where the least can go wrong. If this is not possible, attention should be paid to the following properties:
 * The blocking voltage of the new MOSFET should be the same as that of the old MOSFET. A higher blocking voltage is not always recommended, as a higher blocking voltage usually also increases the on-state resistance.
  * The maximum current should be greater than or equal to the old MOSFET
