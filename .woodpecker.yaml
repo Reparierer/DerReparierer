@@ -6,10 +6,7 @@ steps:
   - name: build
     image: debian
     commands:
-      - echo "This is the build step"
-      - echo "binary-data-123" > executable
-  - name: a-test-step
-    image: golang:1.16
-    commands:
-      - echo "Testing ..."
-      - ./executable
+      - echo "Start Pipeline"
+      - pip install sphinx sphinx-rtd-theme
+      - ls
+	  - sphinx-build . _build/
