@@ -9,4 +9,4 @@ steps:
       - echo "Start Pipeline"
       - pip install sphinx sphinx-rtd-theme
       - ls
-	  - sphinx-build . _build/
+      - sphinx-build . _build/
