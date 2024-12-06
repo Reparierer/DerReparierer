@@ -7,9 +7,9 @@ steps:
     image: debian
     commands:
       - echo "Start Pipeline"
-      - python -m venv venv
+      - python3 -m venv venv
       - /bin/bash -c "source venv/bin/activate"
-      - python -m pip install --upgrade pip
-      - python -m pip install sphinx sphinx-rtd-theme
+      - python3 -m pip install --upgrade pip
+      - python3 -m pip install sphinx sphinx-rtd-theme
       - ls
       - sphinx-build . _build/
