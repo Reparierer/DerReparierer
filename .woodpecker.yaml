@@ -11,5 +11,6 @@ steps:
       - /bin/bash -c "source venv/bin/activate"
       - python3 -m pip install --upgrade pip
       - python3 -m pip install sphinx sphinx-rtd-theme myst-parser
+      - python3 generate_index.py
       - ls
       - sphinx-build . _build/
