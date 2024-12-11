@@ -4,7 +4,7 @@ when:
 
 steps:
   - name: build
-    image: debian
+    image: python:3.12-bookworm
     commands:
       - echo "Start Pipeline"
       - python3 -m venv venv
