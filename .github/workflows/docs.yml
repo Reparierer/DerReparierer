@@ -1,0 +1,40 @@
+name: "Generate docs"
+
+on:
+  push:
+    branches: [ ci_trial]
+  pull_request:
+    branches: [ main ]
+  # Run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: actions/checkout@v4
+    - name: Install sphinx, build documentation
+      run: |
+        echo "Start Pipeline"        
+        pip install --upgrade pip
+        pip install sphinx sphinx-rtd-theme myst-parser
+        python3 generate_index.py
+        ls
+        sphinx-build . _build/
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-docs
+        path: docs/build/html/
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/ci_trial'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build/html
