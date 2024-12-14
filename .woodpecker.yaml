@@ -4,12 +4,37 @@ when:
 
 steps:
   - name: build
-    image: python:3.9-buster
+    image: python:3.12-bookworm
     commands:
       - echo "Start Pipeline"
       - python3 -m venv venv
       - /bin/bash -c "source venv/bin/activate"
       - python3 -m pip install --upgrade pip
       - python3 -m pip install sphinx sphinx-rtd-theme myst-parser
+      - python3 generate_index.py
       - ls
       - sphinx-build . _build/
+  - name: publish
+    image: bitnami/git:2
+    environment:
+      # secrets must be set in Woodpecker configuration
+      secrets: [mail, cbtoken]
+    commands:
+      # config git to commit and push changes
+      - git config --global --add safe.directory $CI_WORKSPACE/public
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git config --global init.defaultBranch pages
+      # clone the existing pages branch which will be updated with new doc build
+      - git clone -b pages https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git build_docs
+      # purge existing docs
+      - rm -rf build_docs/*
+      # add new docs
+      - cp -a _build/* build_docs/
+      # commit and push to pages branch
+      - cd build_docs/
+      - git remote set-url origin https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git
+      - git add --all
+      # exclude current push from CI pipeline triggering
+      - git commit -m "deploy $CI_COMMIT_SHA [CI SKIP]"
+      - git push -u origin pages
