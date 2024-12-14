@@ -49,7 +49,7 @@ if __name__ == "__main__":
         # a maxdepth of 1 shows the sub-topics on sub-topic page
         # a maxdepth of 2 shows the subtopics and the captions inside the document (e.g. failure investigation).
         # -> 1 is preferred!
-        sub_topic_index_string = (f"{topic_folder.replace("_", " ").title()}\n"
+        sub_topic_index_string = (f"{topic_folder.replace('_', ' ').title()}\n"
                         f"==========================\n\n"
                         f".. toctree::\n"
                         f"   :maxdepth: 1\n"
@@ -93,7 +93,7 @@ Here you will find several categories for repairing electronic devices. Just tak
     # add dynamic topics to index.rst file
     # Note: Name in brackets <> fixes the displayed name vs. the real file name.
     for topic_name in topic_list:
-        topic_string_index = f"   {topic_name.replace("_", "").title()} <{topic_name}/index>\n"
+        topic_string_index = f"   {topic_name.replace('_', ' ').title()} <{topic_name}/index>\n"
         main_index_string += topic_string_index
 
     # write main index.rst file
