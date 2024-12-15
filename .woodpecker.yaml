@@ -1,3 +1,6 @@
+# inactive workflow.
+# currently GitHub actions is connected to Codeberg pages.
+
 when:
   - event: push
     branch: ci_trial
