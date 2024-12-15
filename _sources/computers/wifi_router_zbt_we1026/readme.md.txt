@@ -15,3 +15,5 @@ There is no voltage at its output capacitor. The control IC also looks burnt.
 This is replaced together with the output capacitor and the device works again.
 
 Defective switch mode power supply controller: `AX3051` from `Axelite`
+
+Note: The control IC has a ground pad. Hot-air soldering is recommended.
