@@ -1,4 +1,4 @@
-name: "Generate docs"
+name: "Generate docs for Codeberg pages"
 
 on:
   push:
@@ -35,6 +35,8 @@ jobs:
     - name: push to codeberg pages branch
       run: |
         git config --global --add safe.directory $GITHUB_WORKSPACE/public
+        git config --global user.email "GitHub Actions"
+        git config --global user.name "GitHub Actions"
         git config --global init.defaultBranch pages
         # clone the existing pages branch which will be updated with new doc build
         git clone -b pages https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git build_docs
