@@ -34,7 +34,7 @@ jobs:
         path: _build/
     - name: push to codeberg pages branch
       shell: bash
-      with:
+      env:
         MAIL: ${{ secrets.MAIL }}
         CBTOKEN: ${{ secrets.CBTOKEN }}
       run: |
