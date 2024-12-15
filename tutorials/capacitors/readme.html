@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capacitors &mdash; derReparierer 2023 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a4664895"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Diodes in switched-mode power supplies (SMPS)" href="../diodes/readme.html" />
+    <link rel="prev" title="Tutorials" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            derReparierer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Repair Categories:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Welcome! All about repairing electronics.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bike/index.html">Bike</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../car/index.html">Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../computers/index.html">Computers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../consumer_electronics/index.html">Consumer Electronics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../household_devices/index.html">Household Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kitchen/index.html">Kitchen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/index.html">Misc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../music/index.html">Music</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Capacitors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#electrolitic-capacitors">Electrolitic capacitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#film-capacitors">Film capacitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#investigating-in-impedance-plots">Investigating in impedance plots</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../diodes/readme.html">Diodes in switched-mode power supplies (SMPS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mosfets/readme.html">MOSFETs in switched-mode power supplies (SMPS)</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">derReparierer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Tutorials</a></li>
+      <li class="breadcrumb-item active">Capacitors</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/tutorials/capacitors/readme.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="capacitors">
+<h1>Capacitors<a class="headerlink" href="#capacitors" title="Link to this heading"></a></h1>
+<p>Capacitors are one of the most important components when it comes to smoothing the output voltage of power supplies. This section gives a rough overview of the most common defects of the components.</p>
+<section id="electrolitic-capacitors">
+<h2>Electrolitic capacitors<a class="headerlink" href="#electrolitic-capacitors" title="Link to this heading"></a></h2>
+<p><img alt="electrolytic_capacitors" src="../../_images/electrolytic_capacitors.jpg" />
+Switching power supplies are nowadays the standard to provide stable voltage supplies for other electronics (TV, monitor, …). To work most efficiently, they use switched, mostly triangular current waveforms in the conversion from one voltage form to another (e.g. from 230 V AC to 12 V DC). To ensure that the output voltage is largely free of ripples, very high capacitances are required to smooth them out. In order to realize very high capacitances in a very small space, electrolytic capacitors are used. Compared to other technologies (ceramic capacitors, film capacitors), these have a very high capacitance with a small volume. In order to provide this high capacitance, however, it is necessary to build the capacitor with a dielectric with a high dielectric constant. This is the liquid electrolyte. Due to the liquid property, it is possible for the electrolyte to escape over time, among other things. The self-heating of the capacitor contributes somewhat to the escape of the electrolyte, which in turn is caused by the ripple current to be smoothed.</p>
+<p>The figure below shows an equivalent circuit of an electrolytic capacitor. The capacitance is abstracted by <code class="docutils literal notranslate"><span class="pre">C</span></code>, the eqivalent series resistance (ESR) as well as the internal inductance <code class="docutils literal notranslate"><span class="pre">L</span></code> (made by terminal connections and internal film) are shown. The values of <code class="docutils literal notranslate"><span class="pre">ESR</span></code> and <code class="docutils literal notranslate"><span class="pre">L</span></code> are very very small, compared to <code class="docutils literal notranslate"><span class="pre">C</span></code> for DC.</p>
+<p><img alt="equivalent_circuit" src="../../_images/equivalent_circuit_electrolytic_capacitor.png" /></p>
+<p>Definitely defective electrolytic capacitors can be recognized by a curved case cover. <strong>Unfortunately, this is not always the case.</strong> Often the components are not visible from the outside. A good indication of a defective capacitor is an unstable voltage when you measure the voltage with a multimeter. What helps for sure is desoldering and measuring. The capacitance should be checked, which can be done with a simple multimeter. The deviation as printed on the capacitor, taking into account the also printed tolerance. If possible, the equivalent series resistance (ESR) of the capacitor should also be measured. However, this requires a special measuring device (ESR meter). Since the ESR is usually not included in the data sheets of the components and this is strongly dependent on the installed series, it is difficult to give a guideline value here. Definitely the resistance should be smaller than <code class="docutils literal notranslate"><span class="pre">0.5</span> <span class="pre">Ohm</span></code>. The ESR can not be measured with a conventional multimeter!</p>
+<p><img alt="broken_capacitor" src="../../_images/broken_capacitor_labeled.png" /></p>
+<p>In general, it makes sense to replace the electrolytic capacitors on suspicion. This applies in particular to the capacitors which have to smooth a high ripple current, i.e. low-voltage capacitors (imprint up to ‘50 V’), which are usually located behind an RF transformer and a diode. The electrolytic capacitors on the input side of the switching power supply are often not affected (imprint usually about <code class="docutils literal notranslate"><span class="pre">380</span> <span class="pre">V</span></code>). Since the device to be repaired is usually already a few years old, as well as that the capacitors are available very cheaply, it makes sense to replace them as soon as the device is open anyway.</p>
+<p>When replacing capacitors, make sure that the printed voltage class is at least the same. Furthermore, it is recommended to always select the temperature class ‘105 °C’ for the replacement, even if the defective capacitor has a lower temperature class. Furthermore, attention should be paid to the construction volume (will the replacement capacitor fit into the given space?) as well as the grid dimension (pin spacing). The capacitance should of course be selected to be equal or greater.</p>
+</section>
+<section id="film-capacitors">
+<h2>Film capacitors<a class="headerlink" href="#film-capacitors" title="Link to this heading"></a></h2>
+<p><img alt="Film_capacitors" src="../../_images/film_capacitors.jpg" /></p>
+<p>Film capacitors are often used in so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Capacitive_power_supply">capacitor power supplies</a>. Here, the capacitor serves as a reactance to reduce the voltage. In most cases, capacitor power supplies are used as a low-cost alternative to switching power supplies. The voltage drop across the capacitor is <code class="docutils literal notranslate"><span class="pre">U</span> <span class="pre">=</span> <span class="pre">2</span> <span class="pre">*</span> <span class="pre">pi</span> <span class="pre">*</span> <span class="pre">f</span> <span class="pre">*</span> <span class="pre">C</span></code>, with almost no power dissipation in the capacitor due to the almost ideal <code class="docutils literal notranslate"><span class="pre">90</span> <span class="pre">°</span></code> phase shift. Capacitors in capacitor power supplies often lose capacitance over time, so that the reactance increases over time. Due to the increased resistance, it can then happen after some time that the output voltage of the power supply becomes too low. The capacitance of the capacitor can be determined with a conventional multimeter.</p>
+<p>Since the capacitors are directly exposed to the mains voltage, and thus also to switching transients, they must belong to a higher safety class than conventional film capacitors. The safety class defines the level of pulse resistance and non-flammability. Mostly this is the safety class <code class="docutils literal notranslate"><span class="pre">X2</span></code> used in capacitor power supplies. In addition to capacitance, voltage, dimensions and pitch, this must be taken into account when replacing the capacitor.</p>
+<p>Note that in the figure above, the first capacitor is no safety capacitor, as the <code class="docutils literal notranslate"><span class="pre">X2</span></code> label is missing. This component should not be used when connecting direct to the mains, as it is done in capacitor power supplies. All other capacitors are marked by an <code class="docutils literal notranslate"><span class="pre">X2</span></code> label.</p>
+</section>
+<section id="investigating-in-impedance-plots">
+<h2>Investigating in impedance plots<a class="headerlink" href="#investigating-in-impedance-plots" title="Link to this heading"></a></h2>
+<p><img alt="impedance_analyzer" src="../../_images/impedance_analyzer.jpg" />
+Another way to investigate components is to measure them with an impedance analyzer. This shows the impedance and phase of the component over the frequency in a double logarithmic scale.</p>
+<p><img alt="impedance" src="../../_images/impedance_curves.png" /></p>
+<p>Typical curves for electrolytic capacitor and film capacitor are shown here. At low frequencies mainly the capacitance C acts, at high frequencies mainly the inductance L. For electrolytic capacitors the ESR is very large compared to the film capacitor. This is reflected in the plateau of the curve.</p>
+<p>Defective capacitors can be recognized by the fact that they are</p>
+<ul class="simple">
+<li><p>deviate strongly in terms of capacitance</p></li>
+<li><p>deviate strongly from the ESR</p></li>
+<li><p>the curve no longer has the typical curve shape.</p></li>
+</ul>
+<p>The following figure shows an good <code class="docutils literal notranslate"><span class="pre">1000</span> <span class="pre">µF</span></code> electrolytic capacitor (which was recalculated, in dashed line) and a broken electrolytic capacitor. It can be clearly seen, that the measured waveform of the broken capacitor strongly derivates from the calculated good waveform.
+<img alt="impedance_electrolytic" src="../../_images/impedance_electrolitic_1000uF.png" /></p>
+<p>Another example is given for several film capacitors. All curves show different values of capacitance and all curve waveforms look like a typical shape for a film capacitor. For the <code class="docutils literal notranslate"><span class="pre">680</span> <span class="pre">nF</span></code> (brown line), the real capacitance curve is shown by the dashed line. The derivation in capacitance is high, so the capacitor has lost its capacitance.
+<img alt="impedance_film" src="../../_images/impedance_film.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../diodes/readme.html" class="btn btn-neutral float-right" title="Diodes in switched-mode power supplies (SMPS)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, derReparierer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

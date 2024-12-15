@@ -1,0 +1,20 @@
+Welcome to derReparierer. All about repairing electronics.
+===============================================================================
+
+Here you will find several categories for repairing electronic devices. Just take a look around!
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Repair Categories:
+   :glob:
+   
+   readme.md
+   Bike <bike/index>
+   Car <car/index>
+   Computers <computers/index>
+   Consumer Electronics <consumer_electronics/index>
+   Household Devices <household_devices/index>
+   Kitchen <kitchen/index>
+   Misc <misc/index>
+   Music <music/index>
+   Tutorials <tutorials/index>
