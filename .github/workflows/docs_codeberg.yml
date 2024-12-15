@@ -35,19 +35,31 @@ jobs:
     - name: push to codeberg pages branch
       run: |
         git config --global --add safe.directory $GITHUB_WORKSPACE/public
+        echo safe dir set successfully
         git config --global user.email $MAIL
+        echo mail set successfully
         git config --global user.name "derReparierer"
+        echo user name set successfully
         git config --global init.defaultBranch pages
+        echo default branch set successfully
         # clone the existing pages branch which will be updated with new doc build
         git clone -b pages https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git build_docs
+        echo git clone branch was successful
         # purge existing docs
         rm -rf build_docs/*
+        echo purge existing docs was successful
         # add new docs
         cp -a _build/* build_docs/
+        echo add new docs was successful
         # commit and push to pages branch
         cd build_docs/
+        echo cd build_docs/ was successful
         git remote set-url origin https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git
+        echo set remote-url was successful
         git add --all
+        echo git add was successful
         # exclude current push from CI pipeline triggering
         git commit -m "deploy $GITHUB_SHA [ci skip]"
+        echo git commit was successful
         git push -u origin pages
+        echo git push to pages was successful
