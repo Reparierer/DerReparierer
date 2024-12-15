@@ -38,3 +38,20 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _build/
+    - name: push to codeberg pages branch
+      run: |
+        git config --global --add safe.directory $GITHUB_WORKSPACE/public
+        git config --global init.defaultBranch pages
+      # clone the existing pages branch which will be updated with new doc build
+        git clone -b pages https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git build_docs
+      # purge existing docs
+        rm -rf build_docs/*
+      # add new docs
+        cp -a _build/* build_docs/
+      # commit and push to pages branch
+        cd build_docs/
+        git remote set-url origin https://$CBTOKEN@codeberg.org/derreparierer/derreparierer.git
+        git add --all
+      # exclude current push from CI pipeline triggering
+        git commit -m "deploy $GITHUB_SHA [ci skip]"
+        git push -u origin pages
