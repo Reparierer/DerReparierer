@@ -33,6 +33,7 @@ jobs:
         name: html-docs
         path: _build/
     - name: push to codeberg pages branch
+      shell: bash
       with:
         MAIL: ${{ secrets.MAIL }}
         CBTOKEN: ${{ secrets.CBTOKEN }}
