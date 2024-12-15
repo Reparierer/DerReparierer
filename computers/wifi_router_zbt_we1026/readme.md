@@ -17,3 +17,5 @@ This is replaced together with the output capacitor and the device works again.
 Defective switch mode power supply controller: `AX3051` from `Axelite`
 
 Note: The control IC has a ground pad. Hot-air soldering is recommended.
+If only a commercially available hot air dryer is available, nearby components should be covered with aluminum foil. 
+Nearby electrolytic capacitors should be desoldered beforehand, even if they are located under the aluminum foil.
