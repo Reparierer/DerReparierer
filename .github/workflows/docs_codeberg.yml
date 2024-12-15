@@ -33,6 +33,9 @@ jobs:
         name: html-docs
         path: _build/
     - name: push to codeberg pages branch
+      with:
+        MAIL: ${{ secrets.MAIL }}
+        CBTOKEN: ${{ secrets.CBTOKEN }}
       run: |
         git config --global --add safe.directory $GITHUB_WORKSPACE/public
         echo safe dir set successfully
