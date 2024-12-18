@@ -17,4 +17,5 @@ Here you will find several categories for repairing electronic devices. Just tak
    Kitchen <kitchen/index>
    Misc <misc/index>
    Music <music/index>
+   Smartphones <smartphones/index>
    Tutorials <tutorials/index>
