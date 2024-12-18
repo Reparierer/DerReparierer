@@ -1,0 +1,8 @@
+Smartphones
+==========================
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   display_apple_iphone_se_2020/readme.md
