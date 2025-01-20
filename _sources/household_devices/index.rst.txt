@@ -7,6 +7,7 @@ Household Devices
 
    LED_lamp_nordlux/readme.md
    dryer_bosch/readme.md
+   freezer_privileg_superoeko/readme.md
    gas_boiler_heating_vaillant/readme.md
    heat_pump_control_dimplex_wpm/readme.md
    heating_system_buderus/readme.md
