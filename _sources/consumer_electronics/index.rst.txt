@@ -17,6 +17,7 @@ Consumer Electronics
    remote_control_unit/remote_control_unit_2_broken_pcb/readme.md
    solar_garden_light_chain/readme.md
    stereo_kenwood_KR-A3080/readme.md
+   stereo_schneider_team442cd/readme.md
    subwoofer_harman_kardon/readme.md
    subwoofer_trust/readme.md
    switch_mode_power_supply_12V/readme.md
