@@ -8,6 +8,7 @@ Kitchen
    coffee_maker_melitta_F63_0-201/readme.md
    coffee_maker_petra_KN3117/readme.md
    cutting_machine_graef/readme.md
+   dishwasher_comfee_cgt60eaa/readme.md
    food_processor_BRAUN_4262/readme.md
    kitchen_blender_AEG_E_EM_0034/readme.md
    microwave_sharp/readme.md
