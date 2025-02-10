@@ -15,6 +15,11 @@ It is noticeable that there is supply voltage `Vin` at the plugs to the board, b
 The entire voltage drops across the resistor of the protection circuit because the varistor has been triggered and is now stuck at 0V. 
 The two elements of the protective circuit are replaced. Now the device works again!
 
-Reichelt order numbers:     
-Resistor: `VIT CR254R4,7`     
+Due to the increased power that the resistor receives in the event of a fault, a fuse resistor should be used here. 
+This safely interrupts the current flow in the event of overtemperature of the resistor.
+
+Mouser order number for the fuse resistor:     
+Resistor: `603-CRF200JT524R7UL`
+
+Reichelt order numbers:      
 Varistor: `EPC B72210-S 27`
