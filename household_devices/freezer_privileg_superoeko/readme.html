@@ -117,8 +117,11 @@ The voltage is traced from the socket to the supply board.
 It is noticeable that there is supply voltage <code class="docutils literal notranslate"><span class="pre">Vin</span></code> at the plugs to the board, but no longer at the electrolytic capacitors <code class="docutils literal notranslate"><span class="pre">Vcc</span></code> directly at the start of the board.
 The entire voltage drops across the resistor of the protection circuit because the varistor has been triggered and is now stuck at 0V.
 The two elements of the protective circuit are replaced. Now the device works again!</p>
+<p>Due to the increased power that the resistor receives in the event of a fault, a fuse resistor should be used here.
+This safely interrupts the current flow in the event of overtemperature of the resistor.</p>
+<p>Mouser order number for the fuse resistor:<br />
+Resistor: <code class="docutils literal notranslate"><span class="pre">603-CRF200JT524R7UL</span></code></p>
 <p>Reichelt order numbers:<br />
-Resistor: <code class="docutils literal notranslate"><span class="pre">VIT</span> <span class="pre">CR254R4,7</span></code><br />
 Varistor: <code class="docutils literal notranslate"><span class="pre">EPC</span> <span class="pre">B72210-S</span> <span class="pre">27</span></code></p>
 </section>
 </section>
