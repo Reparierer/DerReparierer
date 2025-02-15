@@ -9,6 +9,7 @@ Consumer Electronics
    dvd_player_cyberhome/readme.md
    flatscreen_LG_19inch_L1952/readme.md
    flatscreen_siemens_P15-1/readme.md
+   headphone_jack_plug_replacement/readme.md
    headphone_vivanco_sr85l/readme.md
    mobile_charger_huawei/readme.md
    power_bank_ravpower_pb19/readme.md
