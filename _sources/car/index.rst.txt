@@ -5,4 +5,5 @@ Car
    :maxdepth: 1
    :caption: Contents:
 
+   garage_door_remote_control/readme.md
    smart_radio_remote_control/readme.md
