@@ -54,7 +54,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#description-of-failure">Description of failure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#failure-investigation">Failure investigation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output-voltage-of-zero">Output voltage of zero</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#instable-output-voltage">Instable output voltage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unstable-output-voltage">Unstable output voltage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#few-years-later-broken-input-dc-link-capacitor">Few years later: Broken input (DC-link) capacitor</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../dryer_bosch/readme.html">Dryer Bosch MAXX7 sensitive does not turn-on</a></li>
@@ -123,9 +124,18 @@
 Replacement diode: <code class="docutils literal notranslate"><span class="pre">BY500-1000</span> <span class="pre">1000V</span> <span class="pre">5A</span></code>.</p>
 <p>It should also be mentioned that the original diode installed is a rectifier diode for mains applications (50 Hz / 60 Hz). However, a consumer switching power supply (with silicon semiconductors) usually has switching frequencies in the range 50 kHz to 150 kHz. For this reason, a different diode was chosen as a replacement.</p>
 </section>
-<section id="instable-output-voltage">
-<h2>Instable output voltage<a class="headerlink" href="#instable-output-voltage" title="Link to this heading"></a></h2>
-<p>If the power supply unit delivers an unstable output voltage, this usually indicates the output capacitor. You can find out how to recognize defective capacitors in the <a class="reference internal" href="../../tutorials/capacitors/readme.html"><span class="std std-doc">section on electrolytic capacitors</span></a>. In very rare cases, the input capacitor is also the problem.</p>
+<section id="unstable-output-voltage">
+<h2>Unstable output voltage<a class="headerlink" href="#unstable-output-voltage" title="Link to this heading"></a></h2>
+<p>If the power supply unit delivers an unstable output voltage, this usually indicates the output capacitor.
+You can find out how to recognize defective capacitors in the <a class="reference internal" href="../../tutorials/capacitors/readme.html"><span class="std std-doc">section on electrolytic capacitors</span></a>.
+In very rare cases, the input (DC-link) capacitor is also the problem.</p>
+</section>
+<section id="few-years-later-broken-input-dc-link-capacitor">
+<h2>Few years later: Broken input (DC-link) capacitor<a class="headerlink" href="#few-years-later-broken-input-dc-link-capacitor" title="Link to this heading"></a></h2>
+<p>A few years after repairing the diode, the power supply unit fails again.
+This time the DC-link capacitor is significantly blown and needs to be replaced.
+<img alt="" src="../../_images/capacitor.png" /></p>
+<p>Mouser order number: <code class="docutils literal notranslate"><span class="pre">80-ESL475M400AGMAA</span> </code></p>
 </section>
 </section>
 

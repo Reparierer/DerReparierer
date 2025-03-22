@@ -22,5 +22,14 @@ Replacement diode: `BY500-1000 1000V 5A`.
 It should also be mentioned that the original diode installed is a rectifier diode for mains applications (50 Hz / 60 Hz). However, a consumer switching power supply (with silicon semiconductors) usually has switching frequencies in the range 50 kHz to 150 kHz. For this reason, a different diode was chosen as a replacement.
 
 
-## Instable output voltage
-If the power supply unit delivers an unstable output voltage, this usually indicates the output capacitor. You can find out how to recognize defective capacitors in the [section on electrolytic capacitors](../../tutorials/capacitors/readme.md). In very rare cases, the input capacitor is also the problem.
+## Unstable output voltage
+If the power supply unit delivers an unstable output voltage, this usually indicates the output capacitor. 
+You can find out how to recognize defective capacitors in the [section on electrolytic capacitors](../../tutorials/capacitors/readme.md). 
+In very rare cases, the input (DC-link) capacitor is also the problem.
+
+## Few years later: Broken input (DC-link) capacitor
+A few years after repairing the diode, the power supply unit fails again. 
+This time the DC-link capacitor is significantly blown and needs to be replaced.
+![](figures/capacitor.png)
+
+Mouser order number: `80-ESL475M400AGMAA `
