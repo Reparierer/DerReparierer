@@ -21,7 +21,7 @@ Also,  the resistance between the gate pin `G` and the source pin `S` as well as
 If possible, broken MOSFETs should be replaced with the same type. This is where the least can go wrong. If this is not possible, attention should be paid to the following properties:
 * The blocking voltage of the new MOSFET should be the same as that of the old MOSFET. A higher blocking voltage is not always recommended, as a higher blocking voltage usually also increases the on-state resistance.
  * The maximum current should be greater than or equal to the old MOSFET
- * The on-state resistance (R_ds,on) should be less than or equal to that of the old MOSFET. A higher R_ds,on would cause excessive losses in continuous operation, which in return would affect the lifespan of the newly installed component.
+ * The on-state resistance `R_ds,on` should be less than or equal to that of the old MOSFET. A higher `R_ds,on` would cause excessive losses in continuous operation, which in return would affect the lifespan of the newly installed component.
  * The housing and the pinout should be the same.
 
 Attention: When mounting the component on a heat sink, appropriate insulating foils are often installed. These must be reinstalled during the repair, as the cooling fin of the component is usually at a high potential. Insulating separation is absolutely essential here. In most cases, such 'gap pads' also provide a good thermal connection to a heat sink.

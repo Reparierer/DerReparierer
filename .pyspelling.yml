@@ -1,0 +1,11 @@
+matrix:
+- name: markdown
+  sources:
+  - '**/*.md'
+  aspell:
+    lang: en
+    d: en_US
+    mode: markdown
+  dictionary:
+    wordlists:
+    - wordlist

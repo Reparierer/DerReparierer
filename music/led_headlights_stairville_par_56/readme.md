@@ -27,6 +27,6 @@ transistor drain-source voltage blue: `1.9 V ... 2.9 V`
 
 The much too high voltage across the transistor for the color blue is clearly visible. As this transistor is loaded more than the others due to the higher current consumption, it has broken down over time. It must be replaced. There are at least two versions of the assembly, an SMD version and a discrete version:
 
-Reichelt odering number SMD version: `BC 817-40 SMD`
+Reichelt ordering number SMD version: `BC 817-40 SMD`
 
 It is also advisable to replace all three transistors at the same time. 

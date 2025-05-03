@@ -23,7 +23,7 @@ Another very popular distribution is Ubuntu, which is also very user-friendly.
 
 In general, it is advisable to use the long-term support (LTS) versions, as these have a significantly longer maintenance period without having to reinstall the system in the meantime. 
 
-To get an impression of how to install and use your Linux distribution, it is recommended to search for it on youtube. Here you will generally find very good and detailed instructions on these topics, e.g. [this video for Linux Mint](https://www.youtube.com/watch?v=DDtMTVW1U4s).
+To get an impression of how to install and use your Linux distribution, it is recommended to search for it on YouTube. Here you will generally find very good and detailed instructions on these topics, e.g. [this video for Linux Mint](https://www.youtube.com/watch?v=DDtMTVW1U4s).
 
 ## Linux programs
 As soon as the switch to Linux has been made, the question arises as to which programs can be used for what. Below you will find an overview. Many of these programs are also available for other operating systems.
