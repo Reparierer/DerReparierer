@@ -1,4 +1,4 @@
-# Stove Beko: broken heat plate
+# Stove BEKO: broken heat plate
 ![](figures/overview_labeled.png)
 
 Model: BEKO EH 9610 XHN

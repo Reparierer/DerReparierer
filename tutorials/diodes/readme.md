@@ -6,7 +6,7 @@ In this section we look at the function and error mechanisms of diodes. Diodes a
 
 ![](figures/details.png)
 
-The equivalent circuit of a real diode contains a voltage source `V_F` which represents the forward voltage, a resistor `R_F` which represents the resistance of the diodes channel and an ideal diode `D` which represents the conducting behaviour for current, which is only allowed in one direction. All together, with this equivalent circuit, the diodes forward characteristic can be modeled in the `UI`-diagram.
+The equivalent circuit of a real diode contains a voltage source `V_F` which represents the forward voltage, a resistor `R_F` which represents the resistance of the diodes channel and an ideal diode `D` which represents the conducting behavior for current, which is only allowed in one direction. All together, with this equivalent circuit, the diodes forward characteristic can be modeled in the `UI`-diagram.
 
 ## Diode failures
 Diodes often break as a short circuit. In rare cases, they are also completely high-impedance. The easiest way to detect defective diodes is to check the forward voltage `V_F` with a multimeter. Depending on the diode technology, this should be in the range of `0.2 V` to `0.8 V`. However, if the multimeter shows a forward voltage of `0V`, the diode is defective.
