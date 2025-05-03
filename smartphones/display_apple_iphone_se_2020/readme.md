@@ -9,7 +9,7 @@ Type: `iPhone SE 2020 (2nd)`
 The display has very visible unwanted stripes.
 
 ## Display replacement
-The display replacement is based on the [instructions from iFixIt](https://www.ifixit.com/Guide/iPhone+SE+2020+Screen+Replacement/133817).
+The display replacement is based on the [instructions from iFixit](https://www.ifixit.com/Guide/iPhone+SE+2020+Screen+Replacement/133817).
 The linked instructions are of high quality and contain many useful tips and tricks. 
 Read them carefully before you start. 
 Special tools are required, especially for the housing screws. 
@@ -21,4 +21,4 @@ Before final assembly with a new seal, the device should be checked for function
  - Check the feel of the home button. If it does not react as usual, loosen the screw slightly. This screw is generally very loose compared to the others.
  - Switch the device off again and continue with the assembly.
 
-Do not forget to replace the adhesive. This is shown in this [iFixIt instruction](https://www.ifixit.com/Guide/iPhone+Display+Adhesive+Replacement/93983).
+Do not forget to replace the adhesive. This is shown in this [iFixit instruction](https://www.ifixit.com/Guide/iPhone+Display+Adhesive+Replacement/93983).

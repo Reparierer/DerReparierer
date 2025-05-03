@@ -6,7 +6,7 @@ Manufacturer: `Buderus`
 Type: `Loganagas G_124 Lownox `
 
 ## Description of failure
-The system time seems to be not set proper. The rythm between day and night (colder during the night) seems to be shifted.
+The system time seems to be not set proper. The rhythm between day and night (colder during the night) seems to be shifted.
 
 ## Failure investigation
 The timer element of the heater has an internal battery. The voltage of the battery is `2.3 V`. A new battery has a voltage about `3.6 V`, so this one is empty and needs to be replaced. It is soldered on the PCB and can be replaced using a soldering iron. After replacing the battery with a new one, date and time must be set, and the heating system work as usual again. 

@@ -14,6 +14,6 @@ As the push-button operation continues to function, it is clear that the electro
 
 ![](figures/switch.png)
 
-As the switch cannot be ordered new, it is opened and inspected. The burnt contact is clearly visible. A simple re-bending and cleaning of the contact surfaces with isopropanol gives the machine a new lease of life. Make sure that the distance between the metal and its contact point is the same as for the switch that is still intact (on the other side).
+As the switch cannot be ordered new, it is opened and inspected. The burnt contact is clearly visible. A simple re-bending and cleaning of the contact surfaces with isopropyl alcohol gives the machine a new lease of life. Make sure that the distance between the metal and its contact point is the same as for the switch that is still intact (on the other side).
 
 Other users have also reported [this problem](https://howtomendit.com/answers.php?id=293076).
