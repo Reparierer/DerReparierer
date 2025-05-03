@@ -19,6 +19,11 @@ jobs:
       with:
         python-version: '3.10'
     - uses: actions/checkout@v4
+    - name: Install and run spell check
+      run: |
+        sudo apt install aspell-en
+        pip install pyspelling
+        pyspelling
     - name: Install sphinx, build documentation
       run: |
         echo "Start Pipeline"        
