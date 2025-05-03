@@ -1,4 +1,4 @@
-# Stove Siemens HE204221 / 01: Heatplate always runs on full-power
+# Stove Siemens HE204221 / 01: Heating plate always runs on full-power
 ![](figures/overview.png)
 
 Model: Siemens HE204221 / 01

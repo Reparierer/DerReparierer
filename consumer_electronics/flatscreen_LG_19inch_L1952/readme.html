@@ -112,7 +112,7 @@
              
   <section id="lg-flatron-l1952">
 <h1>LG Flatron L1952<a class="headerlink" href="#lg-flatron-l1952" title="Link to this heading"></a></h1>
-<p><img alt="flatscreen_" src="../../_images/overview1.jpg" /></p>
+<p><img alt="flat_screen_" src="../../_images/overview1.jpg" /></p>
 <section id="description-of-failure">
 <h2>Description of failure<a class="headerlink" href="#description-of-failure" title="Link to this heading"></a></h2>
 <p>Especially failures with the background lightning:</p>
@@ -126,14 +126,14 @@
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
 <p><img alt="Power supply LG 1952" src="../../_images/power_electronic_pcb.png" />
-The main problem is in broken electrolytic capacitors, what is a common problem in power electronics supplies. A electrolytic capacitor comes with a certain operating hours at a given ripple current. If the designers made any calculation mistake in calculating the lifetime (this is very difficult!), the devices goes broken earlyier than expected. On the other hand, most of the devices will fail after they reached the end of the capacitors lifetime. Replacing these capacitors is cheap and easy.</p>
+The main problem is in broken electrolytic capacitors, what is a common problem in power electronics supplies. An electrolytic capacitor comes with a certain operating hours at a given ripple current. If the designers made any calculation mistake in calculating the lifetime (this is very difficult!), the devices goes broken earlier than expected. On the other hand, most of the devices will fail after they reached the end of the capacitors lifetime. Replacing these capacitors is cheap and easy.</p>
 <ul class="simple">
 <li><p>Disassemble the housing carefully</p></li>
 <li><p>Inside, there are two PCBs: a power PCB and a main PCB (often named as T-Con board)</p></li>
 <li><p>The main reason for background lightning errors are broken capacitors of the power electronics converter. The capacitors are marked in red in the figure above.</p></li>
 <li><p>Replace all electrolytic capacitors that belong to power electronics converter.</p></li>
 </ul>
-<p>Make shure that you replace the capacitors by same type as the old one. Sometimes it is not possible to get exactly the same capacitor type.</p>
+<p>Make sure that you replace the capacitors by same type as the old one. Sometimes it is not possible to get exactly the same capacitor type.</p>
 <ul class="simple">
 <li><p>Capacitance rating should be same or higher</p></li>
 <li><p>temperature rating should be <code class="docutils literal notranslate"><span class="pre">105</span> <span class="pre">°C</span></code>, even the old ones have a lover temperature rating</p></li>
@@ -145,7 +145,7 @@ The main problem is in broken electrolytic capacitors, what is a common problem 
 <section id="investigation-into-the-capacitors">
 <h2>Investigation into the capacitors<a class="headerlink" href="#investigation-into-the-capacitors" title="Link to this heading"></a></h2>
 <p><img alt="" src="../../_images/capacitor_1000uF.png" />
-When measuring the capacitors, a defective one was found. The defective 1000 uF capacitor is shown in the figure (measurement vs. ideal capacitor). The strong deviation from the impedance curve is visible. The phase angle deviates strongly from the -90° characteristic of a capacitor. The behavior is totally undefined. Even if some capacitors are still OK, all electroitic capacitors should always be replaced.</p>
+When measuring the capacitors, a defective one was found. The defective <code class="docutils literal notranslate"><span class="pre">1000</span> <span class="pre">uF</span></code> capacitor is shown in the figure (measurement vs. ideal capacitor). The strong deviation from the impedance curve is visible. The phase angle deviates strongly from the -90° characteristic of a capacitor. The behavior is totally undefined. Even if some capacitors are still OK, all electrolytic capacitors should always be replaced.</p>
 </section>
 </section>
 
