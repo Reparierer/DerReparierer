@@ -8,4 +8,5 @@ Computers
    computer_power_supply_unit/readme.md
    computer_power_supply_unit_2/readme.md
    electronic_waste/readme.md
+   usb_extender_cat5e/readme.md
    wifi_router_zbt_we1026/readme.md
