@@ -5,4 +5,5 @@ Smartphones
    :maxdepth: 1
    :caption: Contents:
 
+   battery_apple_iphone_xs/readme.md
    display_apple_iphone_se_2020/readme.md
