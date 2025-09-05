@@ -5,5 +5,6 @@ Bike
    :maxdepth: 1
    :caption: Contents:
 
+   chain_lock_abus_cover_replacement/readme.md
    led_lamp/readme.md
    rear_light_trelock/readme.md
