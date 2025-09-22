@@ -27,7 +27,9 @@ Since the capacitors are directly exposed to the mains voltage, and thus also to
 
 Note that in the figure above, the first capacitor is no safety capacitor, as the `X2` label is missing. This component should not be used when connecting direct to the mains, as it is done in capacitor power supplies. All other capacitors are marked by an `X2` label.
 
-
+Furthermore, for `X2` film capacitors, which are used in capacitor power supply applications, the data sheet should explicitly state that they are suitable for series connection to the mains. 
+A typical note in the data sheet is, for example: `For connections in series with the mains`.
+Further information can be found [here](https://www.vishay.com/docs/28153/acfilmconnectionmains.pdf).
 
 ## Investigating in impedance plots
 ![impedance_analyzer](figures/impedance_analyzer.jpg)
