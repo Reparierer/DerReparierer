@@ -9,7 +9,7 @@ In the many tidy gardens without hedges and mounds of leaves, hedgehogs can hard
 ## Failure investigation
 To counteract this, we provide a hedgehog house. There are already some very good instructions for this online.
 
-[Bund Naturschutz tutorial](https://www.bund-naturschutz.de/oekologisch-leben/tieren-helfen/igelhaus-bauen)
+[BUND Naturschutz tutorial](https://www.bund-naturschutz.de/oekologisch-leben/tieren-helfen/igelhaus-bauen)
 
 Inside, it is filled with leaves.
 
