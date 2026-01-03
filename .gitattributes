@@ -1,3 +1,4 @@
+computers/electronic_waste/figures/macbook.png filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 */*.png filter=lfs diff=lfs merge=lfs -text
 */*/*.png filter=lfs diff=lfs merge=lfs -text
