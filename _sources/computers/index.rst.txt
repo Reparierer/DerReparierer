@@ -1,0 +1,15 @@
+Computers
+==========================
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   computer_power_supply_unit/readme.md
+   computer_power_supply_unit_2/readme.md
+   electronic_waste/readme.md
+   keyboard_logitech_g15_led_replacement/readme.md
+   powerline_fritz_510E/readme.md
+   usb_extender_cat5e/readme.md
+   wifi_router_zbt_we1026/readme.md
+   wireless_pc_mouse_jelly_comb/readme.md
